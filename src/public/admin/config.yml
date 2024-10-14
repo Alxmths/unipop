@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: Alxmths/unipop # Path to your GitHub repository
+  preview_context: my-provider/deployment
+
+media_folder: media
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: articles
+    folder: content/articles # local path to posts (relative to src)
+    preview_path: p/{{id}}
+    show_preview_links: true 
+    label: Article
+    create: true
+    slug: "{{title}}"
+    fields: 
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      # - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
