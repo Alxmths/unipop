@@ -12,7 +12,7 @@ display_url: https://unipop.vercel.app # TO change
 # logo_url: https://your-site.com/images/logo.svg
 locale: 'fr'
 
-media_folder: media
+media_folder: src/media
 
 publish_mode: editorial_workflow
 show_preview_links: true
@@ -21,7 +21,7 @@ editor:
 
 collections:
   - name: articles
-    folder: content/articles # local path to posts (relative to src)
+    folder: src/content/articles # local path to posts (relative to src)
     label: Article
     create: true
     slug: "{{title}}-{{date}}"
