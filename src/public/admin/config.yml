@@ -1,20 +1,29 @@
+# https://json.schemastore.org/netlify.json
 backend:
   name: github
   repo: Alxmths/unipop # Path to your GitHub repository
   preview_context: my-provider/deployment
 
+
+site_url: https://unipop.vercel.app # TO change
+display_url: https://unipop.vercel.app # TO change
+
+# logo_url: https://your-site.com/images/logo.svg
+locale: 'fr'
+
 media_folder: media
 
 publish_mode: editorial_workflow
+show_preview_links: true
+editor: 
+  preview: true
 
 collections:
   - name: articles
     folder: content/articles # local path to posts (relative to src)
-    preview_path: p/{{id}}
-    show_preview_links: true 
     label: Article
     create: true
-    slug: "{{title}}"
+    slug: "{{title}}-{{date}}"
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }

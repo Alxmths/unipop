@@ -3,3 +3,7 @@ src/.vitepress/cache
 
 .env*
 !.env.example
+
+src/.vitepress/*
+!src/.vitepress/theme
+!src/.vitepress/config.mts
