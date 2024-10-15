@@ -11,5 +11,3 @@ Le but est de rendre la publication possible par un compte sans github
 ### Insérons une image
 
 ![](/media/lothaire.jpg "Lothaire")
-
-[](media/lothaire.jpg)
