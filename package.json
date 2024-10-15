@@ -12,6 +12,7 @@
   "author": "Alexandre Mathias",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
+    "@types/node": "^22.7.5",
     "vitepress": "^1.4.1"
   }
 }

@@ -2,7 +2,8 @@
 backend:
   name: github
   repo: Alxmths/unipop # Path to your GitHub repository
-  preview_context: my-provider/deployment
+  branch: main
+  # preview_context: my-provider/deployment
 
 
 site_url: https://unipop.vercel.app # TO change
